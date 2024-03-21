@@ -1,12 +1,13 @@
 pipeline {
     agent any
-    }
+
     stages {
-        stage('Git Checkout') {
+        stage('Build') {
             steps {
-                git url: 'https://github.com/rajiv1506/equal_experts.git' ,branch: 'main'
+                git url:"https://github.com/rajiv1506/equal_experts.git"
+
             }
+
         }
+    }
 }
-
-
