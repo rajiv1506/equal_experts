@@ -9,7 +9,7 @@ pipeline {
             }
         }
         stage('Building Tag') {
-            sh 'cd equal_experts'
+            powershell 'cd equal_experts'
             def tag = buildtag()
         }
 
@@ -18,5 +18,5 @@ pipeline {
 }
 
 def buildtag(){
-    sh 'git rev-parse --short HEAD'
+    powershell 'git rev-parse --short HEAD'
 }
