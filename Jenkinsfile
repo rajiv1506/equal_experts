@@ -4,8 +4,9 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git url: 
+                git url: 'https://github.com/rajiv1506/equal_experts.git' ,branch: 'main'
             }
         }
-    }
 }
+
+
